@@ -13,6 +13,7 @@ import RxCocoa
 class StatisticsVC: UITableViewController {
     
     let viewModel: StatisticsViewModel
+    let searchController = UISearchController(searchResultsController: nil)
     
     init() {
         viewModel = StatisticsViewModel(bag: DisposeBag())
@@ -22,6 +23,7 @@ class StatisticsVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
+        setupSearchBar()
         setupTableView()
         observeNetworkEvents()
         viewModel.getStatistics()
@@ -31,6 +33,19 @@ class StatisticsVC: UITableViewController {
         title = AppConstants.appName
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
+        navigationController?.navigationBar.tintColor = AppColor.primary
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Show all", style: .plain, target: self, action: #selector(handleShowAll))
+    }
+    
+    @objc func handleShowAll() {
+        viewModel.statistics.accept(viewModel.unfilteredData)
+    }
+    
+    private func setupSearchBar() {
+        self.navigationItem.searchController = searchController
+        searchController.delegate = self
+        searchController.searchBar.delegate = self
     }
     
     private func setupTableView() {
@@ -66,5 +81,11 @@ class StatisticsVC: UITableViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension StatisticsVC: UISearchControllerDelegate, UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.filterSearch(search: searchText)
     }
 }

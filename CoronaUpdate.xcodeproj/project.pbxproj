@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		041CA19A242DA90E00F7E9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CA199242DA90E00F7E9F6 /* AppDelegate.swift */; };
 		041CA19C242DA90E00F7E9F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CA19B242DA90E00F7E9F6 /* SceneDelegate.swift */; };
-		041CA19E242DA90E00F7E9F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CA19D242DA90E00F7E9F6 /* ViewController.swift */; };
 		041CA1A3242DA90F00F7E9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CA1A2242DA90F00F7E9F6 /* Assets.xcassets */; };
 		041CA1A6242DA90F00F7E9F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041CA1A4242DA90F00F7E9F6 /* LaunchScreen.storyboard */; };
 		041CA1B2242DAB0300F7E9F6 /* StatisticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CA1B1242DAB0300F7E9F6 /* StatisticsVC.swift */; };
@@ -50,7 +49,6 @@
 		041CA196242DA90E00F7E9F6 /* CoronaUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041CA199242DA90E00F7E9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041CA19B242DA90E00F7E9F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		041CA19D242DA90E00F7E9F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		041CA1A2242DA90F00F7E9F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041CA1A5242DA90F00F7E9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041CA1A7242DA90F00F7E9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				041CA1CD242DAB5C00F7E9F6 /* Utils */,
 				041CA1AE242DA9BC00F7E9F6 /* Resources */,
 				041CA1AD242DA9A800F7E9F6 /* SupportingFiles */,
-				041CA19D242DA90E00F7E9F6 /* ViewController.swift */,
 				041CA1A7242DA90F00F7E9F6 /* Info.plist */,
 			);
 			path = CoronaUpdate;
@@ -442,7 +439,6 @@
 				041CA201242DAB5C00F7E9F6 /* UIViewController+Ext.swift in Sources */,
 				041CA1C4242DAB3800F7E9F6 /* NetworkManager.swift in Sources */,
 				041CA218242DB0A300F7E9F6 /* StatisticsModel.swift in Sources */,
-				041CA19E242DA90E00F7E9F6 /* ViewController.swift in Sources */,
 				041CA1B2242DAB0300F7E9F6 /* StatisticsVC.swift in Sources */,
 				041CA1F3242DAB5C00F7E9F6 /* BaseViewController.swift in Sources */,
 				041CA1F9242DAB5C00F7E9F6 /* UILabel+Ext.swift in Sources */,

@@ -12,10 +12,11 @@ import RxCocoa
 
 class StatisticsViewModel {
     let bag: DisposeBag
-    let apiClient: ApiClient
+    private let apiClient: ApiClient
     let networkResponse = BehaviorRelay<NetworkResponse?>.init(value: nil)
     let statistics = BehaviorRelay<[StatisticsResponse]>.init(value: [StatisticsResponse]())
     let showHud = BehaviorRelay<Bool?>.init(value: nil)
+    var unfilteredData = [StatisticsResponse]()
     
     init(bag: DisposeBag) {
         self.bag = bag
@@ -40,5 +41,15 @@ class StatisticsViewModel {
         guard let dataResponse = response.objects as? StatisticsModel else { return }
         guard let statisticsData = dataResponse.response else { return }
         statistics.accept(statisticsData)
+        unfilteredData = statisticsData
+    }
+    
+    func filterSearch(search: String) {
+        if search.isEmpty {
+            statistics.accept(unfilteredData)
+            return
+        }
+        let filteredValue = unfilteredData.filter({ ($0.country ?? "").lowercased().contains(search.lowercased()) })
+        statistics.accept(filteredValue)
     }
 }
