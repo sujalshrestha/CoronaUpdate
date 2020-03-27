@@ -61,5 +61,7 @@
 		<string>Poppins-Regular.ttf</string>
 		<string>Poppins-Bold.ttf</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>

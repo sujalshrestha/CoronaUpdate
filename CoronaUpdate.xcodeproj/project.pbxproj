@@ -46,7 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		041CA196242DA90E00F7E9F6 /* CoronaUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041CA196242DA90E00F7E9F6 /* Corona Update.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corona Update.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041CA199242DA90E00F7E9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041CA19B242DA90E00F7E9F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		041CA1A2242DA90F00F7E9F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		041CA197242DA90E00F7E9F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				041CA196242DA90E00F7E9F6 /* CoronaUpdate.app */,
+				041CA196242DA90E00F7E9F6 /* Corona Update.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 			);
 			name = CoronaUpdate;
 			productName = CoronaUpdate;
-			productReference = 041CA196242DA90E00F7E9F6 /* CoronaUpdate.app */;
+			productReference = 041CA196242DA90E00F7E9F6 /* Corona Update.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -598,7 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2LVA8QJKSB;
+				DEVELOPMENT_TEAM = CCQDN6Q4M8;
 				INFOPLIST_FILE = CoronaUpdate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -606,7 +606,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.corona.coronaupdate.nepal.CoronaUpdate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Corona Update";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -618,7 +618,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2LVA8QJKSB;
+				DEVELOPMENT_TEAM = CCQDN6Q4M8;
 				INFOPLIST_FILE = CoronaUpdate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -626,7 +626,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.corona.coronaupdate.nepal.CoronaUpdate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Corona Update";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
